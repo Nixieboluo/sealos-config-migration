@@ -192,7 +192,7 @@ function resolveReplacementValue(
 	type: ValueType,
 	enumValues?: readonly string[],
 ): unknown {
-	if (defaultValue !== undefined && defaultValue !== null) {
+	if (defaultValue !== undefined) {
 		return defaultValue;
 	}
 	return fallbackValueForType(type, enumValues);

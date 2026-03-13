@@ -186,9 +186,8 @@ def replacementValue(
     enums: Seq[String]
 ): Any =
   defaultValue match
-    case Some(null) => fallbackValueOf(t, enums)
-    case Some(v)    => v
-    case None       => fallbackValueOf(t, enums)
+    case Some(v) => v
+    case None    => fallbackValueOf(t, enums)
 
 def hasSourceValue(raw: Option[Any]): Boolean =
   raw match
