@@ -10,6 +10,7 @@
     "schemaPath": "providers/cronjob/data/config.schema.json",
     "mappings": [
       { "sourceKey": "SEALOS_DOMAIN", "targetPath": "cloud.domain", "type": "string" },
+      { "sourceKey": "SEALOS_DOMAIN", "targetPath": "cloud.desktopDomain", "type": "string" },
       { "sourceKey": "APPLAUNCHPAD_URL", "targetPath": "cronjob.components.applaunchpad.url", "type": "string" },
       { "sourceKey": "SUCCESSFUL_JOBS_HISTORY_LIMIT", "targetPath": "cronjob.jobHistory.successfulLimit", "type": "number" },
       { "sourceKey": "FAILED_JOBS_HISTORY_LIMIT", "targetPath": "cronjob.jobHistory.failedLimit", "type": "number" },
@@ -154,6 +155,7 @@
     "mappings": [
       { "sourceKey": "REGION_UID", "targetPath": "cloud.regionUid", "type": "string" },
       { "sourceKey": "RETAG_SVC_URL", "targetPath": "devbox.components.retagService.url", "type": "string" },
+      { "sourceKey": "MONITOR_URL", "targetPath": "devbox.components.monitoring.url", "type": "string" },
       { "sourceKey": "METRICS_URL", "targetPath": "devbox.components.monitoring.url", "type": "string" },
       { "sourceKey": "JWT_SECRET", "targetPath": "devbox.security.jwtSecret", "type": "string" },
       { "sourceKey": "INGRESS_SECRET", "targetPath": "devbox.userDomain.secretName", "type": "string" },
@@ -163,6 +165,7 @@
       { "sourceKey": "SSH_DOMAIN", "targetPath": "devbox.runtime.sshDomain", "type": "string" },
       { "sourceKey": "SEALOS_DOMAIN", "targetPath": "cloud.domain", "type": "string" },
       { "sourceKey": "REGISTRY_ADDR", "targetPath": "devbox.runtime.registryHost", "type": "string" },
+      { "sourceKey": "DEVBOX_RUNTIME_CLASS_NAME", "targetPath": "devbox.runtime.runtimeClassName", "type": "string" },
       { "sourceKey": "GUIDE_ENABLED", "targetPath": "devbox.features.guide", "type": "boolean" },
       { "sourceKey": "DEVBOX_DOMAIN_CHALLENGE_SECRET", "targetPath": "devbox.security.domainChallengeSecret", "type": "string" },
       { "sourceKey": "DOCUMENT_URL_ZH", "targetPath": "devbox.ui.docUrls.docs.zh", "type": "string" },

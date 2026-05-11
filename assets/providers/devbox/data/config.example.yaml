@@ -30,6 +30,7 @@ devbox:
     defaultNamespace: default
     sshDomain: cloud.sealos.io
     registryHost: hub.sealos.plus
+    runtimeClassName: devbox-runtime
     webidePort: 9999
 
   resources:
